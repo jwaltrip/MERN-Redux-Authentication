@@ -16,9 +16,7 @@ This will install all the dependencies for both front and back end.
 
 ##### Configure the MongoDB connection string
 
-Copy the template file `/server/config/DB.example.js` to `/server/config/DB.js` and enter your MongoDB connection string here
-
-The copied `DB.js` file will be ignored by git (via .gitignore) and will not be pushed to a public repo, keeping your DB connection info safe locally
+Copy the 
 
 ### How to Use
 
