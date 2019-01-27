@@ -24,4 +24,4 @@ yarn-error.log*
 
 .idea/
 
-/server/config/DB.js
+.env
