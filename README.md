@@ -18,8 +18,8 @@ This will install all the dependencies for both front and back end.
 
 Copy the `.env.example` file to `.env`
 
-Fill in the `MONGODB_URI` field with the mongoDB connection string from MLab
-Fill in the `SECRET` field with random chars for secure authentication
+Fill in the `MONGODB_URI` field with the mongoDB connection string from MLab  
+Fill in the `SECRET` field with random chars for secure authentication  
 Leave the `PORT` field blank for now
 
 ### How to Use
