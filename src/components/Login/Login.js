@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { loginUser } from "../actions/authActions";
+import { loginUser } from "../../actions/authActions";
 import classnames from 'classnames';
 
 class Login extends Component {
@@ -58,14 +58,14 @@ class Login extends Component {
     const { errors } = this.state;
 
     return (
-      <div className="container" style={{ width: 700 }}>
+      <div className="container" style={{ width: 500 }}>
         <h2 style={{ marginBottom: 40 }}>Login</h2>
         <form onSubmit={ this.handleSubmit }>
           <div className="form-group">
             <input
               type="email"
               placeholder="Email"
-              className={classnames('form-control form-control-lg', {
+              className={classnames('form-control', {
                 'is-invalid': errors.email
               })}
               name="email"
@@ -78,7 +78,7 @@ class Login extends Component {
             <input
               type="password"
               placeholder="Password"
-              className={classnames('form-control form-control-lg', {
+              className={classnames('form-control', {
                 'is-invalid': errors.password
               })}
               name="password"

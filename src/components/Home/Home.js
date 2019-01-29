@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 const Home = (props) => {
-  const isLoggedOut = <p><Link to="/register">Register</Link> or <Link to="/login">Log in</Link> to see the Posts!</p>;
-  const isLoggedIn = <p>Check out the <Link to="/posts">Posts!</Link></p>;
+  const loggedOutContent = <p><Link to="/register">Register</Link> or <Link to="/login">Log in</Link> to see the Posts!</p>;
+  const loggedInContent = <p>Check out the <Link to="/posts">Posts!</Link></p>;
 
   return (
     <div className="container" style={{ width: 700 }}>
       <h2>Home Page</h2>
       <hr/>
-      {props.auth.isAuthenticated ? isLoggedIn : isLoggedOut}
+      {props.auth.isAuthenticated ? loggedInContent : loggedOutContent}
     </div>
   );
 };

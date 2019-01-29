@@ -19,12 +19,12 @@ This will install all the dependencies for both front and back end.
 Copy the `.env.example` file to `.env`
 
 Fill in the `MONGODB_URI` field with the mongoDB connection string from MLab
-Fill in the `SECRET` field with random chars
+Fill in the `SECRET` field with random chars for secure authentication
 Leave the `PORT` field blank for now
 
 ### How to Use
 
-The Express + MongoDB backend is located in the `/server` dir (and runs on port `4000`)
+The Express + MongoDB backend is located in the root dir (and runs on port `5000`)
 
 The React + Redux frontend is located in the `/src` dir (and runs on port `3000`)
 
@@ -34,15 +34,15 @@ The React + Redux frontend is located in the `/src` dir (and runs on port `3000`
 
 **To start both the front and back end concurrently:**
 
-`npm run start:dev`
+`yarn run start:dev`
 
 _Note: to kill both servers, type `ctrl+c` **once** into the terminal_
 
 **To start just the Express + MongoDB backend:**
 
-`npm run start:server`
+`yarn run start:server`
 
 **To start just the React + Redux frontend:**
 
-`npm run start`
+`yarn run start:react`
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { registerUser } from "../actions/authActions";
+import { registerUser } from "../../actions/authActions";
 import classnames from 'classnames';
 
 class Register extends Component {
@@ -64,14 +64,14 @@ class Register extends Component {
     const { errors } = this.state;
 
     return (
-      <div className="container" style={{ width: 700 }}>
+      <div className="container" style={{ width: 500 }}>
         <h2 style={{ marginBottom: 40 }}>Registration</h2>
         <form onSubmit={ this.handleSubmit }>
           <div className="form-group">
             <input
               type="text"
               placeholder="Name"
-              className={classnames('form-control form-control-lg', {
+              className={classnames('form-control', {
                 'is-invalid': errors.name
               })}
               name="name"
@@ -84,7 +84,7 @@ class Register extends Component {
             <input
               type="email"
               placeholder="Email"
-              className={classnames('form-control form-control-lg', {
+              className={classnames('form-control', {
                 'is-invalid': errors.email
               })}
               name="email"
@@ -97,7 +97,7 @@ class Register extends Component {
             <input
               type="password"
               placeholder="Password"
-              className={classnames('form-control form-control-lg', {
+              className={classnames('form-control', {
                 'is-invalid': errors.password
               })}
               name="password"
@@ -110,7 +110,7 @@ class Register extends Component {
             <input
               type="password"
               placeholder="Confirm Password"
-              className={classnames('form-control form-control-lg', {
+              className={classnames('form-control', {
                 'is-invalid': errors.password_confirm
               })}
               name="password_confirm"

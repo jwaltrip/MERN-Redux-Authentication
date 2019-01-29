@@ -1,9 +1,6 @@
 const JWTStrategy = require("passport-jwt").Strategy;
 const ExtractJWT = require("passport-jwt").ExtractJwt;
-// const mongoose = require("mongoose");
 // import Users mongoose model
-// this might need to be required from ./models/Users
-// const User = mongoose.model('Users');
 const User = require("./models/User");
 
 const opts = {};
