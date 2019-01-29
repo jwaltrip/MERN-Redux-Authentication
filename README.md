@@ -36,7 +36,7 @@ The React + Redux frontend is located in the `/src` dir (and runs on port `3000`
 
 `yarn run start:dev`
 
-_Note: to kill both servers, type `ctrl+c` **once** into the terminal_
+_Note: to kill both servers, type `ctrl+c` **twice** into the terminal_
 
 **To start just the Express + MongoDB backend:**
 
